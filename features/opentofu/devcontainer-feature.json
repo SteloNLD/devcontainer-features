@@ -1,0 +1,13 @@
+{
+  "id": "opentofu",
+  "version": "1.0.0",
+  "name": "OpenTofu",
+  "description": "Installs OpenTofu, an open-source alternative to Terraform",
+  "options": {
+    "version": {
+      "type": "string",
+      "default": "1.12.1",
+      "description": "Version of OpenTofu to install"
+    }
+  }
+}

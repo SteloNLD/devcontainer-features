@@ -11,6 +11,7 @@ Published to `ghcr.io/stelonld/devcontainer-features`.
 | [zola](features/zola) | Installs the [Zola](https://www.getzola.org/) static site generator |
 | [obsidian-export](features/obsidian-export) | Installs [obsidian-export](https://github.com/zoni/obsidian-export) for converting Obsidian vaults to plain markdown |
 | [packer](features/packer) | Installs [HashiCorp Packer](https://www.packer.io/) |
+| [opentofu](features/opentofu) | Installs [OpenTofu](https://opentofu.org/), an open-source alternative to Terraform |
 | [tflint](features/tflint) | Installs [tflint](https://github.com/terraform-linters/tflint), a linter for OpenTofu/Terraform |
 
 ### Usage
