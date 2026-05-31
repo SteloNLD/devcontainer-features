@@ -1,0 +1,13 @@
+{
+  "id": "packer",
+  "version": "1.0.0",
+  "name": "Packer",
+  "description": "Installs HashiCorp Packer",
+  "options": {
+    "version": {
+      "type": "string",
+      "default": "1.15.3",
+      "description": "Version of Packer to install"
+    }
+  }
+}
