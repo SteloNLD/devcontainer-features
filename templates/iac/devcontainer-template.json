@@ -1,0 +1,6 @@
+{
+  "id": "iac",
+  "version": "1.0.0",
+  "name": "IaC",
+  "description": "IaC devcontainer using prebuilt image — OpenTofu, Packer, Ansible, tflint, ansible-lint."
+}

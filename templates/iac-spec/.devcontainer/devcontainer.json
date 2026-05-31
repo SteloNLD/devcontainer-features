@@ -1,0 +1,19 @@
+{
+  "name": "iac-spec",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/robbert229/devcontainer-features/opentofu:1": {},
+    "ghcr.io/stelonld/devcontainer-features/packer:1": {},
+    "ghcr.io/stelonld/devcontainer-features/tflint:1": {},
+    "ghcr.io/devcontainers-extra/features/ansible:2": {},
+    "ghcr.io/hspaans/devcontainer-features/ansible-lint:2": {}
+  },
+  "mounts": [
+    "source=${localEnv:HOME}/.claude,target=/home/vscode/.claude,type=bind",
+    "source=${localEnv:HOME}/.config/gh,target=/home/vscode/.config/gh,type=bind",
+    "source=${localEnv:HOME}/.config/git,target=/home/vscode/.config/git,type=bind",
+    "source=${localEnv:HOME}/src,target=/home/vscode/src,type=bind"
+  ]
+}
