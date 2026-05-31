@@ -8,10 +8,10 @@ Published to `ghcr.io/stelonld/devcontainer-features`.
 
 | Feature | Description |
 |---|---|
-| [zola](src/zola) | Installs the [Zola](https://www.getzola.org/) static site generator |
-| [obsidian-export](src/obsidian-export) | Installs [obsidian-export](https://github.com/zoni/obsidian-export) for converting Obsidian vaults to plain markdown |
-| [packer](src/packer) | Installs [HashiCorp Packer](https://www.packer.io/) |
-| [tflint](src/tflint) | Installs [tflint](https://github.com/terraform-linters/tflint), a linter for OpenTofu/Terraform |
+| [zola](features/zola) | Installs the [Zola](https://www.getzola.org/) static site generator |
+| [obsidian-export](features/obsidian-export) | Installs [obsidian-export](https://github.com/zoni/obsidian-export) for converting Obsidian vaults to plain markdown |
+| [packer](features/packer) | Installs [HashiCorp Packer](https://www.packer.io/) |
+| [tflint](features/tflint) | Installs [tflint](https://github.com/terraform-linters/tflint), a linter for OpenTofu/Terraform |
 
 ### Usage
 

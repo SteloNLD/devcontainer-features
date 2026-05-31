@@ -19,7 +19,7 @@ jobs:
           publish-features: "true"
           oci-registry: "ghcr.io"
           features-namespace: "stelonld/devcontainer-features"
-          base-path-to-features: "./src"
+          base-path-to-features: "./features"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
