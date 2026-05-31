@@ -8,7 +8,9 @@
     "ghcr.io/stelonld/devcontainer-features/packer:1": {},
     "ghcr.io/stelonld/devcontainer-features/tflint:1": {},
     "ghcr.io/devcontainers-extra/features/ansible:2": {},
-    "ghcr.io/stelonld/devcontainer-features/ansible-lint:1": {}
+    "ghcr.io/stelonld/devcontainer-features/ansible-lint:1": {},
+    "ghcr.io/stelonld/devcontainer-features/direnv:1": {},
+    "ghcr.io/devcontainers-extra/features/pre-commit:1": {}
   },
   "mounts": [
     "source=${localEnv:HOME}/.claude,target=/home/vscode/.claude,type=bind",
