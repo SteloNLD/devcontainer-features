@@ -6,9 +6,10 @@ on:
       - main
     paths:
       - templates/iac-spec/**
-      - src/**
+      - features/**
   schedule:
     - cron: "0 2 * * 1"
+  workflow_dispatch:
 
 jobs:
   build:
