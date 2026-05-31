@@ -1,23 +1,46 @@
-# devcontainer-features
+# devcontainers
 
-Custom [Dev Container Features](https://containers.dev/implementors/features/) published to `ghcr.io/stelonld/devcontainer-features`.
+Custom [Dev Container Features](https://containers.dev/implementors/features/) and [Templates](https://containers.dev/implementors/templates/) for use with VS Code Dev Containers.
 
 ## Features
+
+Published to `ghcr.io/stelonld/devcontainer-features`.
 
 | Feature | Description |
 |---|---|
 | [zola](src/zola) | Installs the [Zola](https://www.getzola.org/) static site generator |
 | [obsidian-export](src/obsidian-export) | Installs [obsidian-export](https://github.com/zoni/obsidian-export) for converting Obsidian vaults to plain markdown |
+| [packer](src/packer) | Installs [HashiCorp Packer](https://www.packer.io/) |
+| [tflint](src/tflint) | Installs [tflint](https://github.com/terraform-linters/tflint), a linter for OpenTofu/Terraform |
 
-## Usage
+### Usage
 
 ```json
 "features": {
-  "ghcr.io/stelonld/devcontainer-features/zola:1": {
-    "version": "0.22.1"
-  },
-  "ghcr.io/stelonld/devcontainer-features/obsidian-export:1": {
-    "version": "25.3.0"
-  }
+  "ghcr.io/stelonld/devcontainer-features/zola:1": { "version": "0.22.1" },
+  "ghcr.io/stelonld/devcontainer-features/obsidian-export:1": { "version": "25.3.0" },
+  "ghcr.io/stelonld/devcontainer-features/packer:1": {},
+  "ghcr.io/stelonld/devcontainer-features/tflint:1": {}
 }
 ```
+
+## Templates
+
+Published to `ghcr.io/stelonld/devcontainer-templates`.
+
+| Template | Description |
+|---|---|
+| [iac-spec](templates/iac-spec) | Full IaC devcontainer — OpenTofu, Packer, Ansible, tflint, ansible-lint. Source for the prebuilt `iac` image. |
+| [iac](templates/iac) | IaC devcontainer using the prebuilt image. Faster startup, same tools. |
+
+### Usage
+
+```bash
+devcontainer templates apply --template-id ghcr.io/stelonld/devcontainer-templates/iac --workspace-folder .
+```
+
+## Prebuilt images
+
+| Image | Description |
+|---|---|
+| `ghcr.io/stelonld/devcontainers/iac:latest` | Prebuilt image from `iac-spec`. Rebuilt on every change to `templates/iac-spec` and weekly. |
