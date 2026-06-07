@@ -6,5 +6,19 @@
     "source=${localEnv:HOME}/.config/gh,target=/home/vscode/.config/gh,type=bind",
     "source=${localEnv:HOME}/.config/git,target=/home/vscode/.config/git,type=bind",
     "source=${localEnv:HOME}/src,target=/home/vscode/src,type=bind"
-  ]
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.ansible",
+        "redhat.vscode-yaml",
+        "hashicorp.terraform",
+        "hashicorp.packer",
+        "ms-python.python",
+        "mkhl.direnv",
+        "signageos.signageos-vscode-sops",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  }
 }
