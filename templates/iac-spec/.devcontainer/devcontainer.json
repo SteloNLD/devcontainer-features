@@ -14,5 +14,19 @@
     "ghcr.io/stelonld/devcontainer-features/direnv:1": {},
     "ghcr.io/devcontainers-extra/features/pre-commit:2": {},
     "ghcr.io/devcontainers-extra/features/sops:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.ansible",
+        "redhat.vscode-yaml",
+        "hashicorp.terraform",
+        "hashicorp.packer",
+        "ms-python.python",
+        "mkhl.direnv",
+        "signageos.signageos-vscode-sops",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
   }
 }
